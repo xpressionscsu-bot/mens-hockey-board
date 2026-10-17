@@ -1,0 +1,59 @@
+name: Update data and deploy site
+
+on:
+  schedule:
+    - cron: "15 11 * * *"         # every day, about 6 AM Central: standings
+    - cron: "30 15,19,23 * * 1,2" # Monday and Tuesday afternoons: the weekly poll
+  workflow_dispatch:               # Actions tab > Run workflow
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scraper/requirements.txt
+
+      - name: Install scraper dependencies
+        run: |
+          pip install -r scraper/requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Fetch poll and standings
+        env:
+          NCHC_URL: ${{ vars.NCHC_URL }}
+        run: python scraper/scrape.py --out site/data.json
+
+      - name: Commit data.json if it changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data.json
+          git diff --cached --quiet || (git commit -m "Update poll and standings" && git push)
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
