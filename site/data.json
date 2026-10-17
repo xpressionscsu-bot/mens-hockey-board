@@ -165,8 +165,9 @@
         "last_rank": 20
       }
     ],
-    "status": "ok",
-    "updated_at": "2026-10-17T18:01:54+00:00"
+    "status": "stale",
+    "updated_at": "2026-10-17T18:01:54+00:00",
+    "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.uscho.com/rankings/d-i-mens-poll/\", waiting until \"networkidle\"\n"
   },
   "standings": {
     "source": "https://nchchockey.com/standings.aspx?path=mhockey",
@@ -397,5 +398,5 @@
     "status": "ok",
     "updated_at": "2026-10-17T18:01:54+00:00"
   },
-  "generated_at": "2026-10-17T18:01:54+00:00"
+  "generated_at": "2026-10-17T18:12:46+00:00"
 }
