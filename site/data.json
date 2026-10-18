@@ -187,12 +187,12 @@
           "ga": 0
         },
         "overall": {
-          "gp": 3,
-          "w": 3,
+          "gp": 4,
+          "w": 4,
           "l": 0,
           "t": 0,
           "win_pct": 1.0,
-          "gf": 12,
+          "gf": 17,
           "ga": 5
         }
       },
@@ -209,39 +209,17 @@
           "ga": 0
         },
         "overall": {
-          "gp": 3,
-          "w": 3,
+          "gp": 4,
+          "w": 4,
           "l": 0,
           "t": 0,
           "win_pct": 1.0,
-          "gf": 17,
+          "gf": 21,
           "ga": 2
         }
       },
       {
         "rank": 3,
-        "team": "Minnesota Duluth",
-        "conference": {
-          "gp": 0,
-          "pts": 0,
-          "w": 0,
-          "l": 0,
-          "t": 0,
-          "gf": 0,
-          "ga": 0
-        },
-        "overall": {
-          "gp": 5,
-          "w": 3,
-          "l": 1,
-          "t": 1,
-          "win_pct": 0.8,
-          "gf": 22,
-          "ga": 10
-        }
-      },
-      {
-        "rank": 4,
         "team": "Colorado College",
         "conference": {
           "gp": 0,
@@ -253,39 +231,17 @@
           "ga": 0
         },
         "overall": {
-          "gp": 3,
-          "w": 2,
+          "gp": 4,
+          "w": 3,
           "l": 1,
           "t": 0,
-          "win_pct": 0.667,
-          "gf": 10,
-          "ga": 4
+          "win_pct": 0.75,
+          "gf": 14,
+          "ga": 5
         }
       },
       {
-        "rank": 5,
-        "team": "Denver",
-        "conference": {
-          "gp": 0,
-          "pts": 0,
-          "w": 0,
-          "l": 0,
-          "t": 0,
-          "gf": 0,
-          "ga": 0
-        },
-        "overall": {
-          "gp": 3,
-          "w": 2,
-          "l": 1,
-          "t": 0,
-          "win_pct": 0.667,
-          "gf": 11,
-          "ga": 7
-        }
-      },
-      {
-        "rank": 6,
+        "rank": 4,
         "team": "Miami",
         "conference": {
           "gp": 0,
@@ -297,17 +253,39 @@
           "ga": 0
         },
         "overall": {
-          "gp": 3,
-          "w": 2,
+          "gp": 4,
+          "w": 3,
           "l": 1,
           "t": 0,
-          "win_pct": 0.667,
-          "gf": 11,
-          "ga": 5
+          "win_pct": 0.75,
+          "gf": 14,
+          "ga": 7
         }
       },
       {
-        "rank": 7,
+        "rank": 5,
+        "team": "Minnesota Duluth",
+        "conference": {
+          "gp": 0,
+          "pts": 0,
+          "w": 0,
+          "l": 0,
+          "t": 0,
+          "gf": 0,
+          "ga": 0
+        },
+        "overall": {
+          "gp": 6,
+          "w": 3,
+          "l": 1,
+          "t": 2,
+          "win_pct": 0.75,
+          "gf": 24,
+          "ga": 12
+        }
+      },
+      {
+        "rank": 6,
         "team": "Arizona State",
         "conference": {
           "gp": 0,
@@ -319,17 +297,17 @@
           "ga": 0
         },
         "overall": {
-          "gp": 5,
-          "w": 3,
+          "gp": 6,
+          "w": 4,
           "l": 2,
           "t": 0,
-          "win_pct": 0.6,
-          "gf": 22,
-          "ga": 19
+          "win_pct": 0.667,
+          "gf": 26,
+          "ga": 21
         }
       },
       {
-        "rank": 8,
+        "rank": 7,
         "team": "St. Cloud State",
         "conference": {
           "gp": 0,
@@ -341,13 +319,35 @@
           "ga": 0
         },
         "overall": {
-          "gp": 4,
-          "w": 1,
+          "gp": 5,
+          "w": 2,
           "l": 3,
           "t": 0,
+          "win_pct": 0.6,
+          "gf": 14,
+          "ga": 16
+        }
+      },
+      {
+        "rank": 8,
+        "team": "Denver",
+        "conference": {
+          "gp": 0,
+          "pts": 0,
+          "w": 0,
+          "l": 0,
+          "t": 0,
+          "gf": 0,
+          "ga": 0
+        },
+        "overall": {
+          "gp": 4,
+          "w": 2,
+          "l": 2,
+          "t": 0,
           "win_pct": 0.5,
-          "gf": 9,
-          "ga": 13
+          "gf": 14,
+          "ga": 11
         }
       },
       {
@@ -385,18 +385,18 @@
           "ga": 0
         },
         "overall": {
-          "gp": 1,
+          "gp": 2,
           "w": 0,
-          "l": 1,
+          "l": 2,
           "t": 0,
-          "win_pct": 0.0,
-          "gf": 1,
-          "ga": 2
+          "win_pct": 0.25,
+          "gf": 3,
+          "ga": 5
         }
       }
     ],
     "status": "ok",
-    "updated_at": "2026-10-17T18:01:54+00:00"
+    "updated_at": "2026-10-18T11:42:48+00:00"
   },
-  "generated_at": "2026-10-17T18:12:46+00:00"
+  "generated_at": "2026-10-18T11:42:48+00:00"
 }
