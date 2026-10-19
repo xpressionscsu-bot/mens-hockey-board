@@ -25,6 +25,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -47,7 +49,18 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site/data.json
-          git diff --cached --quiet || (git commit -m "Update poll and standings" && git push)
+          if git diff --cached --quiet; then
+            echo "data.json unchanged"
+            exit 0
+          fi
+          git commit -m "Update poll and standings"
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase -X theirs origin main && git push && exit 0
+            echo "Push failed (attempt $attempt), retrying..."
+            git rebase --abort 2>/dev/null || true
+            sleep $((attempt * 5))
+          done
+          exit 1
 
       - uses: actions/configure-pages@v5
 
