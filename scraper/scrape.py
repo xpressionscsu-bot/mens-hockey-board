@@ -101,9 +101,9 @@ def parse_nchc(html):
 
         try:
             if len(ints) >= 5:
-                pts, conf_gp, gp = ints[0], ints[2], ints[-1]
+                pts, conf_gp, sw, gp = ints[0], ints[2], ints[3], ints[-1]
             elif len(ints) == 4:
-                pts, conf_gp, gp = ints[0], ints[1], ints[3]
+                pts, conf_gp, sw, gp = ints[0], ints[1], ints[2], ints[3]
             else:
                 raise ValueError("too few whole-number columns")
             if len(recs) < 2:
@@ -113,26 +113,27 @@ def parse_nchc(html):
                 conf_rec, overall_rec = overall_rec, conf_rec  # columns may be in the other order
                 if sum(ints_of(conf_rec)) != conf_gp or sum(ints_of(overall_rec)) != gp:
                     raise ValueError("W-L-T totals do not match games played")
-            if len(pairs) >= 3:
-                conf_gfga, overall_gfga = pairs[1], pairs[-1]
-            elif len(pairs) == 2:
-                conf_gfga, overall_gfga = pairs[0], pairs[1]
-            else:
-                raise ValueError("too few GF-GA columns")
+            if len(pairs) < 3:
+                raise ValueError("too few OW-OL / GF-GA columns")
+            ow_ol, conf_gfga, overall_gfga = pairs[0], pairs[1], pairs[-1]
+            ow, ol = ints_of(ow_ol)
             cgf, cga = ints_of(conf_gfga)
             ogf, oga = ints_of(overall_gfga)
             if ogf < cgf or oga < cga:
                 raise ValueError("overall goals are lower than conference goals")
+            if ow + ol > conf_gp or sw > conf_gp:
+                raise ValueError("overtime or shootout results exceed conference games played")
         except ValueError as exc:
             raise ValueError(f"NCHC row for {team} not understood ({exc}); cells: {rest}") from exc
 
         cw, cl, ct = ints_of(conf_rec)
-        ow, ol, ot = ints_of(overall_rec)
+        all_w, all_l, all_t = ints_of(overall_rec)
         rows.append({
             "rank": len(rows) + 1,
             "team": team,
-            "conference": {"gp": conf_gp, "pts": pts, "w": cw, "l": cl, "t": ct, "gf": cgf, "ga": cga},
-            "overall": {"gp": gp, "w": ow, "l": ol, "t": ot,
+            "conference": {"gp": conf_gp, "pts": pts, "w": cw, "l": cl, "t": ct,
+                           "ow": ow, "ol": ol, "sw": sw, "gf": cgf, "ga": cga},
+            "overall": {"gp": gp, "w": all_w, "l": all_l, "t": all_t,
                         "win_pct": float(pcts[0]) if pcts else None, "gf": ogf, "ga": oga},
         })
 
