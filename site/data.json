@@ -2,172 +2,171 @@
   "poll": {
     "source": "https://www.uscho.com/rankings/d-i-mens-poll/",
     "name": "USCHO.com Division I Men's Poll",
-    "poll_date": "2026-10-12",
+    "poll_date": "2026-10-19",
     "rows": [
       {
         "rank": 1,
-        "team": "Denver",
-        "first_place_votes": 33,
-        "record": "2-0-0",
-        "points": 979,
-        "last_rank": 1
-      },
-      {
-        "rank": 2,
         "team": "Michigan",
-        "first_place_votes": 14,
-        "record": "4-0-0",
-        "points": 954,
+        "first_place_votes": 47,
+        "record": "6-0-0",
+        "points": 992,
         "last_rank": 2
       },
       {
-        "rank": 3,
+        "rank": 2,
         "team": "Michigan State",
-        "first_place_votes": 3,
-        "record": "2-0-0",
-        "points": 898,
+        "first_place_votes": 2,
+        "record": "3-0-0",
+        "points": 924,
         "last_rank": 3
       },
       {
-        "rank": 4,
+        "rank": 3,
         "team": "North Dakota",
         "first_place_votes": 0,
-        "record": "2-0-0",
-        "points": 833,
+        "record": "4-0-0",
+        "points": 890,
         "last_rank": 4
       },
       {
-        "rank": 5,
-        "team": "Wisconsin",
+        "rank": 4,
+        "team": "Denver",
         "first_place_votes": 0,
+        "record": "2-2-0",
+        "points": 797,
+        "last_rank": 1
+      },
+      {
+        "rank": 5,
+        "team": "Western Michigan",
+        "first_place_votes": 1,
         "record": "4-0-0",
-        "points": 777,
-        "last_rank": 7
+        "points": 795,
+        "last_rank": 6
       },
       {
         "rank": 6,
-        "team": "Western Michigan",
+        "team": "Wisconsin",
         "first_place_votes": 0,
-        "record": "2-0-0",
-        "points": 730,
-        "last_rank": 8
+        "record": "4-0-0",
+        "points": 772,
+        "last_rank": 5
       },
       {
         "rank": 7,
         "team": "Providence",
         "first_place_votes": 0,
-        "record": "2-0-0",
-        "points": 671,
-        "last_rank": 9
+        "record": "3-0-0",
+        "points": 676,
+        "last_rank": 7
       },
       {
         "rank": 8,
         "team": "Quinnipiac",
         "first_place_votes": 0,
-        "record": "3-1-0",
-        "points": 655,
-        "last_rank": 6
+        "record": "4-1-0",
+        "points": 673,
+        "last_rank": 8
       },
       {
         "rank": 9,
         "team": "Minnesota Duluth",
         "first_place_votes": 0,
-        "record": "2-1-1",
-        "points": 608,
-        "last_rank": 5
+        "record": "3-1-2",
+        "points": 602,
+        "last_rank": 9
       },
       {
         "rank": 10,
         "team": "Dartmouth",
         "first_place_votes": 0,
         "record": "0-0-0",
-        "points": 508,
+        "points": 487,
         "last_rank": 10
       },
       {
         "rank": 11,
-        "team": "Boston University",
+        "team": "Michigan Tech",
         "first_place_votes": 0,
-        "record": "2-0-0",
-        "points": 402,
+        "record": "5-1-0",
+        "points": 454,
         "last_rank": 14
       },
       {
         "rank": 12,
         "team": "Colorado College",
         "first_place_votes": 0,
-        "record": "2-0-0",
-        "points": 401,
-        "last_rank": 15
-      },
-      {
-        "rank": 13,
-        "team": "Cornell",
-        "first_place_votes": 0,
-        "record": "0-0-0",
-        "points": 388,
-        "last_rank": 13
-      },
-      {
-        "rank": 14,
-        "team": "Michigan Tech",
-        "first_place_votes": 0,
         "record": "3-1-0",
-        "points": 369,
+        "points": 435,
         "last_rank": 12
       },
       {
-        "rank": 15,
+        "rank": 13,
         "team": "Augustana",
         "first_place_votes": 0,
-        "record": "1-0-1",
-        "points": 254,
-        "last_rank": null
+        "record": "3-0-1",
+        "points": 360,
+        "last_rank": 15
       },
       {
-        "rank": 16,
-        "team": "Boston College",
+        "rank": 14,
+        "team": "Cornell",
         "first_place_votes": 0,
-        "record": "0-1-0",
-        "points": 247,
+        "record": "0-0-0",
+        "points": 345,
+        "last_rank": 13
+      },
+      {
+        "rank": 15,
+        "team": "Boston University",
+        "first_place_votes": 0,
+        "record": "3-1-0",
+        "points": 323,
         "last_rank": 11
       },
       {
-        "rank": 17,
+        "rank": 16,
         "team": "Connecticut",
         "first_place_votes": 0,
-        "record": "1-1-0",
-        "points": 170,
-        "last_rank": 16
+        "record": "2-2-0",
+        "points": 208,
+        "last_rank": 17
+      },
+      {
+        "rank": 17,
+        "team": "Northeastern",
+        "first_place_votes": 0,
+        "record": "2-1-0",
+        "points": 123,
+        "last_rank": null
       },
       {
         "rank": 18,
-        "team": "Bowling Green",
+        "team": "Boston College",
         "first_place_votes": 0,
-        "record": "2-2-0",
-        "points": 155,
-        "last_rank": null
+        "record": "1-2-0",
+        "points": 117,
+        "last_rank": 16
       },
       {
         "rank": 19,
         "team": "Massachusetts",
         "first_place_votes": 0,
-        "record": "1-2-1",
-        "points": 126,
-        "last_rank": 18
+        "record": "2-3-1",
+        "points": 102,
+        "last_rank": 19
       },
       {
         "rank": 20,
-        "team": "Minnesota",
+        "team": "Merrimack",
         "first_place_votes": 0,
-        "record": "0-2-0",
-        "points": 59,
-        "last_rank": 20
+        "record": "2-1-1",
+        "points": 100,
+        "last_rank": null
       }
     ],
-    "status": "stale",
-    "updated_at": "2026-10-17T18:01:54+00:00",
-    "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.uscho.com/rankings/d-i-mens-poll/\", waiting until \"networkidle\"\n"
+    "status": "ok",
+    "updated_at": "2026-10-19T19:56:29+00:00"
   },
   "standings": {
     "source": "https://nchchockey.com/standings.aspx?path=mhockey",
@@ -428,5 +427,5 @@
     "status": "ok",
     "updated_at": "2026-10-19T16:43:34+00:00"
   },
-  "generated_at": "2026-10-19T16:43:34+00:00"
+  "generated_at": "2026-10-19T19:56:29+00:00"
 }
