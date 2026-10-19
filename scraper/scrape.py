@@ -43,6 +43,25 @@ def to_int(text, default=None):
     return int(m.group()) if m else default
 
 
+def wlt_text(d):
+    """{'w': 4, 'l': 1, 't': 0} -> '4-1-0' (None if any part is missing)."""
+    vals = [d.get("w"), d.get("l"), d.get("t")]
+    return None if any(v is None for v in vals) else "-".join(str(v) for v in vals)
+
+
+def combined_text(wlt, ow, ol, sw):
+    """'4-1-0' plus overtime wins, overtime losses, shootout wins -> '4-1-0 (0-0-0)'."""
+    if wlt is None or None in (ow, ol, sw):
+        return None
+    return f"{wlt} ({ow}-{ol}-{sw})"
+
+
+def gf_ga_text(d):
+    """{'gf': 19, 'ga': 14} -> '19-14' (None if either is missing)."""
+    gf, ga = d.get("gf"), d.get("ga")
+    return None if gf is None or ga is None else f"{gf}-{ga}"
+
+
 def header_cells(table):
     row = table.select_one("thead tr:last-of-type") or table.find("tr")
     return [clean(c.get_text()) for c in row.find_all(["th", "td"])] if row else []
@@ -128,13 +147,19 @@ def parse_nchc(html):
 
         cw, cl, ct = ints_of(conf_rec)
         all_w, all_l, all_t = ints_of(overall_rec)
+        conf = {"gp": conf_gp, "pts": pts, "w": cw, "l": cl, "t": ct,
+                "ow": ow, "ol": ol, "sw": sw, "gf": cgf, "ga": cga}
+        overall = {"gp": gp, "w": all_w, "l": all_l, "t": all_t,
+                   "win_pct": float(pcts[0]) if pcts else None, "gf": ogf, "ga": oga}
+        conf["combined"] = combined_text(wlt_text(conf), ow, ol, sw)
+        overall["combined"] = wlt_text(overall)
+        conf["gf_ga"] = gf_ga_text(conf)
+        overall["gf_ga"] = gf_ga_text(overall)
         rows.append({
             "rank": len(rows) + 1,
             "team": team,
-            "conference": {"gp": conf_gp, "pts": pts, "w": cw, "l": cl, "t": ct,
-                           "ow": ow, "ol": ol, "sw": sw, "gf": cgf, "ga": cga},
-            "overall": {"gp": gp, "w": all_w, "l": all_l, "t": all_t,
-                        "win_pct": float(pcts[0]) if pcts else None, "gf": ogf, "ga": oga},
+            "conference": conf,
+            "overall": overall,
         })
 
     if len(rows) < 8:
