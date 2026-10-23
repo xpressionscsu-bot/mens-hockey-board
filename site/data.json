@@ -165,9 +165,8 @@
         "last_rank": null
       }
     ],
-    "status": "stale",
-    "updated_at": "2026-10-21T11:49:29+00:00",
-    "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.uscho.com/rankings/d-i-mens-poll/\", waiting until \"networkidle\"\n"
+    "status": "ok",
+    "updated_at": "2026-10-23T11:49:34+00:00"
   },
   "standings": {
     "source": "https://nchchockey.com/standings.aspx?path=mhockey",
@@ -176,7 +175,7 @@
     "rows": [
       {
         "rank": 1,
-        "team": "North Dakota",
+        "team": "Arizona State",
         "conference": {
           "gp": 0,
           "pts": 0,
@@ -192,48 +191,19 @@
           "gf_ga": "0-0"
         },
         "overall": {
-          "gp": 4,
+          "gp": 6,
           "w": 4,
-          "l": 0,
+          "l": 2,
           "t": 0,
-          "win_pct": 1.0,
-          "gf": 17,
-          "ga": 5,
-          "combined": "4-0-0",
-          "gf_ga": "17-5"
+          "win_pct": 0.667,
+          "gf": 26,
+          "ga": 21,
+          "combined": "4-2-0",
+          "gf_ga": "26-21"
         }
       },
       {
         "rank": 2,
-        "team": "Western Michigan",
-        "conference": {
-          "gp": 0,
-          "pts": 0,
-          "w": 0,
-          "l": 0,
-          "t": 0,
-          "ow": 0,
-          "ol": 0,
-          "sw": 0,
-          "gf": 0,
-          "ga": 0,
-          "combined": "0-0-0 (0-0-0)",
-          "gf_ga": "0-0"
-        },
-        "overall": {
-          "gp": 4,
-          "w": 4,
-          "l": 0,
-          "t": 0,
-          "win_pct": 1.0,
-          "gf": 21,
-          "ga": 2,
-          "combined": "4-0-0",
-          "gf_ga": "21-2"
-        }
-      },
-      {
-        "rank": 3,
         "team": "Colorado College",
         "conference": {
           "gp": 0,
@@ -259,6 +229,35 @@
           "ga": 5,
           "combined": "3-1-0",
           "gf_ga": "14-5"
+        }
+      },
+      {
+        "rank": 3,
+        "team": "Denver",
+        "conference": {
+          "gp": 0,
+          "pts": 0,
+          "w": 0,
+          "l": 0,
+          "t": 0,
+          "ow": 0,
+          "ol": 0,
+          "sw": 0,
+          "gf": 0,
+          "ga": 0,
+          "combined": "0-0-0 (0-0-0)",
+          "gf_ga": "0-0"
+        },
+        "overall": {
+          "gp": 4,
+          "w": 2,
+          "l": 2,
+          "t": 0,
+          "win_pct": 0.5,
+          "gf": 14,
+          "ga": 11,
+          "combined": "2-2-0",
+          "gf_ga": "14-11"
         }
       },
       {
@@ -321,7 +320,7 @@
       },
       {
         "rank": 6,
-        "team": "Arizona State",
+        "team": "North Dakota",
         "conference": {
           "gp": 0,
           "pts": 0,
@@ -337,19 +336,48 @@
           "gf_ga": "0-0"
         },
         "overall": {
-          "gp": 6,
+          "gp": 5,
           "w": 4,
-          "l": 2,
+          "l": 1,
           "t": 0,
-          "win_pct": 0.667,
-          "gf": 26,
-          "ga": 21,
-          "combined": "4-2-0",
-          "gf_ga": "26-21"
+          "win_pct": 0.8,
+          "gf": 20,
+          "ga": 10,
+          "combined": "4-1-0",
+          "gf_ga": "20-10"
         }
       },
       {
         "rank": 7,
+        "team": "Omaha",
+        "conference": {
+          "gp": 0,
+          "pts": 0,
+          "w": 0,
+          "l": 0,
+          "t": 0,
+          "ow": 0,
+          "ol": 0,
+          "sw": 0,
+          "gf": 0,
+          "ga": 0,
+          "combined": "0-0-0 (0-0-0)",
+          "gf_ga": "0-0"
+        },
+        "overall": {
+          "gp": 2,
+          "w": 0,
+          "l": 2,
+          "t": 0,
+          "win_pct": 0.25,
+          "gf": 3,
+          "ga": 5,
+          "combined": "0-2-0",
+          "gf_ga": "3-5"
+        }
+      },
+      {
+        "rank": 8,
         "team": "St. Cloud State",
         "conference": {
           "gp": 0,
@@ -375,35 +403,6 @@
           "ga": 16,
           "combined": "2-3-0",
           "gf_ga": "14-16"
-        }
-      },
-      {
-        "rank": 8,
-        "team": "Denver",
-        "conference": {
-          "gp": 0,
-          "pts": 0,
-          "w": 0,
-          "l": 0,
-          "t": 0,
-          "ow": 0,
-          "ol": 0,
-          "sw": 0,
-          "gf": 0,
-          "ga": 0,
-          "combined": "0-0-0 (0-0-0)",
-          "gf_ga": "0-0"
-        },
-        "overall": {
-          "gp": 4,
-          "w": 2,
-          "l": 2,
-          "t": 0,
-          "win_pct": 0.5,
-          "gf": 14,
-          "ga": 11,
-          "combined": "2-2-0",
-          "gf_ga": "14-11"
         }
       },
       {
@@ -437,7 +436,7 @@
       },
       {
         "rank": 10,
-        "team": "Omaha",
+        "team": "Western Michigan",
         "conference": {
           "gp": 0,
           "pts": 0,
@@ -453,20 +452,20 @@
           "gf_ga": "0-0"
         },
         "overall": {
-          "gp": 2,
-          "w": 0,
-          "l": 2,
+          "gp": 4,
+          "w": 4,
+          "l": 0,
           "t": 0,
-          "win_pct": 0.25,
-          "gf": 3,
-          "ga": 5,
-          "combined": "0-2-0",
-          "gf_ga": "3-5"
+          "win_pct": 1.0,
+          "gf": 21,
+          "ga": 2,
+          "combined": "4-0-0",
+          "gf_ga": "21-2"
         }
       }
     ],
     "status": "ok",
-    "updated_at": "2026-10-19T21:52:08+00:00"
+    "updated_at": "2026-10-23T11:49:34+00:00"
   },
-  "generated_at": "2026-10-22T11:49:44+00:00"
+  "generated_at": "2026-10-23T11:49:34+00:00"
 }
