@@ -165,8 +165,9 @@
         "last_rank": null
       }
     ],
-    "status": "ok",
-    "updated_at": "2026-10-23T11:49:34+00:00"
+    "status": "stale",
+    "updated_at": "2026-10-23T11:49:34+00:00",
+    "error": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.uscho.com/rankings/d-i-mens-poll/\", waiting until \"networkidle\"\n"
   },
   "standings": {
     "source": "https://nchchockey.com/standings.aspx?path=mhockey",
@@ -220,15 +221,15 @@
           "gf_ga": "0-0"
         },
         "overall": {
-          "gp": 4,
-          "w": 3,
+          "gp": 5,
+          "w": 4,
           "l": 1,
           "t": 0,
-          "win_pct": 0.75,
-          "gf": 14,
-          "ga": 5,
-          "combined": "3-1-0",
-          "gf_ga": "14-5"
+          "win_pct": 0.8,
+          "gf": 20,
+          "ga": 7,
+          "combined": "4-1-0",
+          "gf_ga": "20-7"
         }
       },
       {
@@ -249,15 +250,15 @@
           "gf_ga": "0-0"
         },
         "overall": {
-          "gp": 4,
-          "w": 2,
+          "gp": 5,
+          "w": 3,
           "l": 2,
           "t": 0,
-          "win_pct": 0.5,
-          "gf": 14,
-          "ga": 11,
-          "combined": "2-2-0",
-          "gf_ga": "14-11"
+          "win_pct": 0.6,
+          "gf": 19,
+          "ga": 13,
+          "combined": "3-2-0",
+          "gf_ga": "19-13"
         }
       },
       {
@@ -278,15 +279,15 @@
           "gf_ga": "0-0"
         },
         "overall": {
-          "gp": 4,
-          "w": 3,
+          "gp": 5,
+          "w": 4,
           "l": 1,
           "t": 0,
-          "win_pct": 0.75,
-          "gf": 14,
-          "ga": 7,
-          "combined": "3-1-0",
-          "gf_ga": "14-7"
+          "win_pct": 0.8,
+          "gf": 19,
+          "ga": 8,
+          "combined": "4-1-0",
+          "gf_ga": "19-8"
         }
       },
       {
@@ -307,15 +308,15 @@
           "gf_ga": "0-0"
         },
         "overall": {
-          "gp": 6,
-          "w": 3,
+          "gp": 7,
+          "w": 4,
           "l": 1,
           "t": 2,
-          "win_pct": 0.75,
-          "gf": 24,
-          "ga": 12,
-          "combined": "3-1-2",
-          "gf_ga": "24-12"
+          "win_pct": 0.786,
+          "gf": 28,
+          "ga": 13,
+          "combined": "4-1-2",
+          "gf_ga": "28-13"
         }
       },
       {
@@ -336,15 +337,15 @@
           "gf_ga": "0-0"
         },
         "overall": {
-          "gp": 5,
+          "gp": 6,
           "w": 4,
-          "l": 1,
+          "l": 2,
           "t": 0,
-          "win_pct": 0.8,
-          "gf": 20,
-          "ga": 10,
-          "combined": "4-1-0",
-          "gf_ga": "20-10"
+          "win_pct": 0.667,
+          "gf": 23,
+          "ga": 15,
+          "combined": "4-2-0",
+          "gf_ga": "23-15"
         }
       },
       {
@@ -365,15 +366,15 @@
           "gf_ga": "0-0"
         },
         "overall": {
-          "gp": 2,
-          "w": 0,
+          "gp": 3,
+          "w": 1,
           "l": 2,
           "t": 0,
-          "win_pct": 0.25,
-          "gf": 3,
-          "ga": 5,
-          "combined": "0-2-0",
-          "gf_ga": "3-5"
+          "win_pct": 0.5,
+          "gf": 10,
+          "ga": 9,
+          "combined": "1-2-0",
+          "gf_ga": "10-9"
         }
       },
       {
@@ -423,15 +424,15 @@
           "gf_ga": "0-0"
         },
         "overall": {
-          "gp": 2,
+          "gp": 3,
           "w": 1,
-          "l": 1,
+          "l": 2,
           "t": 0,
-          "win_pct": 0.5,
-          "gf": 5,
-          "ga": 7,
-          "combined": "1-1-0",
-          "gf_ga": "5-7"
+          "win_pct": 0.333,
+          "gf": 6,
+          "ga": 10,
+          "combined": "1-2-0",
+          "gf_ga": "6-10"
         }
       },
       {
@@ -452,20 +453,20 @@
           "gf_ga": "0-0"
         },
         "overall": {
-          "gp": 4,
+          "gp": 5,
           "w": 4,
-          "l": 0,
+          "l": 1,
           "t": 0,
-          "win_pct": 1.0,
-          "gf": 21,
-          "ga": 2,
-          "combined": "4-0-0",
-          "gf_ga": "21-2"
+          "win_pct": 0.8,
+          "gf": 23,
+          "ga": 5,
+          "combined": "4-1-0",
+          "gf_ga": "23-5"
         }
       }
     ],
     "status": "ok",
-    "updated_at": "2026-10-23T11:49:34+00:00"
+    "updated_at": "2026-10-24T11:47:36+00:00"
   },
-  "generated_at": "2026-10-23T11:49:34+00:00"
+  "generated_at": "2026-10-24T11:47:36+00:00"
 }
