@@ -25,6 +25,11 @@ NCHC_URL = os.environ.get("NCHC_URL") or "https://nchchockey.com/standings.aspx?
 USCHO_URL = os.environ.get("USCHO_URL") or "https://www.uscho.com/rankings/d-i-mens-poll/"
 UA = "Mozilla/5.0 (compatible; MensHockeyBoard/1.0; personal project)"
 
+# Folder that holds one image per team, named after the team (for example "Denver.png").
+# Change these two lines if the folder or file type ever moves.
+IMAGE_DIR = "D:\\HOCKEY\\Images\\TEAM COLORS"
+IMAGE_EXT = ".png"
+
 MONTHS = "January|February|March|April|May|June|July|August|September|October|November|December"
 
 REC = re.compile(r"^\d+-\d+-\d+$")      # 3-1-1
@@ -54,6 +59,25 @@ def combined_text(wlt, ow, ol, sw):
     if wlt is None or None in (ow, ol, sw):
         return None
     return f"{wlt} ({ow}-{ol}-{sw})"
+
+
+def team_image_path(team, suffix=""):
+    """Build the Windows path to a team's image file from the team name."""
+    safe = re.sub(r'[\\/:*?"<>|]', "", team).strip()  # characters Windows does not allow in file names
+    return IMAGE_DIR.rstrip("\\") + "\\" + safe + suffix + IMAGE_EXT
+
+
+# Month names as newspapers abbreviate them: short with a period, except March through July.
+SHORT_MONTHS = {1: "Jan.", 2: "Feb.", 3: "March", 4: "April", 5: "May", 6: "June",
+                7: "July", 8: "Aug.", 9: "Sept.", 10: "Oct.", 11: "Nov.", 12: "Dec."}
+
+
+def week_of_text(iso_date):
+    """'2026-10-19' -> 'Week of Oct. 19' (None if there is no date)."""
+    if not iso_date:
+        return None
+    d = dt.date.fromisoformat(iso_date)
+    return f"Week of {SHORT_MONTHS[d.month]} {d.day}"
 
 
 def gf_ga_text(d):
@@ -218,6 +242,8 @@ def parse_uscho(html):
         rows.append({
             "rank": to_int(get("rank"), len(rows) + 1),
             "team": team,
+            "image_path": team_image_path(team),
+            "image_path_2": team_image_path(team, "_2"),
             "first_place_votes": fpv or 0,
             "record": get("record") or None,
             "points": to_int(get("pts")),
@@ -226,7 +252,7 @@ def parse_uscho(html):
 
     if len(rows) < 10:
         raise ValueError(f"Only found {len(rows)} poll rows; expected 20")
-    return {"poll_date": poll_date, "rows": rows}
+    return {"poll_date": poll_date, "week_of": week_of_text(poll_date), "rows": rows}
 
 
 # -------------------------------------------------------------- fetching
@@ -237,17 +263,37 @@ def fetch_static(url):
     return r.text
 
 
-def fetch_rendered(url):
-    """USCHO builds its poll table with JavaScript, so load it in a real browser."""
+def fetch_rendered(url, attempts=3):
+    """USCHO builds its poll table with JavaScript, so load it in a real browser.
+
+    Waits for the table itself instead of for the whole page to go quiet (ads and
+    trackers can keep a page busy forever), skips images and fonts to load faster,
+    and tries up to three times before giving up."""
     from playwright.sync_api import sync_playwright
+    last = None
     with sync_playwright() as p:
         browser = p.chromium.launch()
-        page = browser.new_page(user_agent=UA)
-        page.goto(url, wait_until="networkidle", timeout=60000)
-        page.wait_for_selector("table tbody tr", timeout=30000)
-        html = page.content()
-        browser.close()
-    return html
+        try:
+            for attempt in range(1, attempts + 1):
+                page = browser.new_page(user_agent=UA)
+                page.route(
+                    "**/*",
+                    lambda route: route.abort()
+                    if route.request.resource_type in ("image", "media", "font")
+                    else route.continue_(),
+                )
+                try:
+                    page.goto(url, wait_until="domcontentloaded", timeout=45000)
+                    page.wait_for_selector("table tbody tr", timeout=45000)
+                    return page.content()
+                except Exception as exc:  # noqa: BLE001 - try again, then report the last error
+                    last = exc
+                    print(f"  attempt {attempt} of {attempts} failed: {str(exc).splitlines()[0]}", file=sys.stderr)
+                finally:
+                    page.close()
+        finally:
+            browser.close()
+    raise last
 
 
 # ------------------------------------------------------------------ main
