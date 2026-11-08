@@ -247,62 +247,149 @@
         "rank": 2,
         "team": "Miami",
         "conference": {
-          "gp": 3,
+          "gp": 4,
           "pts": 6,
           "w": 2,
-          "l": 1,
+          "l": 2,
           "t": 0,
           "ow": 0,
           "ol": 0,
           "sw": 0,
-          "gf": 6,
-          "ga": 7,
-          "combined": "2-1-0 (0-0-0)",
-          "gf_ga": "6-7"
+          "gf": 7,
+          "ga": 9,
+          "combined": "2-2-0 (0-0-0)",
+          "gf_ga": "7-9"
         },
         "overall": {
-          "gp": 9,
+          "gp": 10,
           "w": 7,
-          "l": 2,
+          "l": 3,
           "t": 0,
-          "win_pct": 0.778,
-          "gf": 28,
-          "ga": 17,
-          "combined": "7-2-0",
-          "gf_ga": "28-17"
+          "win_pct": 0.7,
+          "gf": 29,
+          "ga": 19,
+          "combined": "7-3-0",
+          "gf_ga": "29-19"
         }
       },
       {
         "rank": 3,
-        "team": "St. Cloud State",
+        "team": "Minnesota Duluth",
         "conference": {
-          "gp": 3,
-          "pts": 4,
-          "w": 1,
-          "l": 1,
-          "t": 1,
+          "gp": 4,
+          "pts": 6,
+          "w": 2,
+          "l": 2,
+          "t": 0,
           "ow": 0,
           "ol": 0,
           "sw": 0,
-          "gf": 6,
-          "ga": 6,
-          "combined": "1-1-1 (0-0-0)",
-          "gf_ga": "6-6"
+          "gf": 8,
+          "ga": 9,
+          "combined": "2-2-0 (0-0-0)",
+          "gf_ga": "8-9"
+        },
+        "overall": {
+          "gp": 12,
+          "w": 7,
+          "l": 3,
+          "t": 2,
+          "win_pct": 0.708,
+          "gf": 39,
+          "ga": 22,
+          "combined": "7-3-2",
+          "gf_ga": "39-22"
+        }
+      },
+      {
+        "rank": 4,
+        "team": "Omaha",
+        "conference": {
+          "gp": 4,
+          "pts": 5,
+          "w": 1,
+          "l": 2,
+          "t": 1,
+          "ow": 0,
+          "ol": 0,
+          "sw": 1,
+          "gf": 9,
+          "ga": 11,
+          "combined": "1-2-1 (0-0-1)",
+          "gf_ga": "9-11"
         },
         "overall": {
           "gp": 8,
           "w": 3,
           "l": 4,
           "t": 1,
-          "win_pct": 0.562,
-          "gf": 20,
-          "ga": 22,
+          "win_pct": 0.5,
+          "gf": 23,
+          "ga": 23,
           "combined": "3-4-1",
-          "gf_ga": "20-22"
+          "gf_ga": "23-23"
         }
       },
       {
-        "rank": 4,
+        "rank": 5,
+        "team": "North Dakota",
+        "conference": {
+          "gp": 2,
+          "pts": 4,
+          "w": 1,
+          "l": 0,
+          "t": 1,
+          "ow": 0,
+          "ol": 0,
+          "sw": 0,
+          "gf": 6,
+          "ga": 3,
+          "combined": "1-0-1 (0-0-0)",
+          "gf_ga": "6-3"
+        },
+        "overall": {
+          "gp": 9,
+          "w": 5,
+          "l": 3,
+          "t": 1,
+          "win_pct": 0.611,
+          "gf": 32,
+          "ga": 23,
+          "combined": "5-3-1",
+          "gf_ga": "32-23"
+        }
+      },
+      {
+        "rank": 6,
+        "team": "St. Cloud State",
+        "conference": {
+          "gp": 4,
+          "pts": 4,
+          "w": 1,
+          "l": 2,
+          "t": 1,
+          "ow": 0,
+          "ol": 0,
+          "sw": 0,
+          "gf": 9,
+          "ga": 11,
+          "combined": "1-2-1 (0-0-0)",
+          "gf_ga": "9-11"
+        },
+        "overall": {
+          "gp": 9,
+          "w": 3,
+          "l": 5,
+          "t": 1,
+          "win_pct": 0.5,
+          "gf": 23,
+          "ga": 27,
+          "combined": "3-5-1",
+          "gf_ga": "23-27"
+        }
+      },
+      {
+        "rank": 7,
         "team": "Colorado College",
         "conference": {
           "gp": 2,
@@ -319,19 +406,19 @@
           "gf_ga": "5-4"
         },
         "overall": {
-          "gp": 9,
+          "gp": 10,
           "w": 7,
           "l": 2,
-          "t": 0,
-          "win_pct": 0.778,
-          "gf": 33,
-          "ga": 13,
-          "combined": "7-2-0",
-          "gf_ga": "33-13"
+          "t": 1,
+          "win_pct": 0.75,
+          "gf": 35,
+          "ga": 15,
+          "combined": "7-2-1",
+          "gf_ga": "35-15"
         }
       },
       {
-        "rank": 5,
+        "rank": 8,
         "team": "St. Thomas",
         "conference": {
           "gp": 2,
@@ -348,19 +435,19 @@
           "gf_ga": "5-3"
         },
         "overall": {
-          "gp": 7,
-          "w": 3,
+          "gp": 8,
+          "w": 4,
           "l": 4,
           "t": 0,
-          "win_pct": 0.429,
-          "gf": 16,
-          "ga": 17,
-          "combined": "3-4-0",
-          "gf_ga": "16-17"
+          "win_pct": 0.5,
+          "gf": 23,
+          "ga": 21,
+          "combined": "4-4-0",
+          "gf_ga": "23-21"
         }
       },
       {
-        "rank": 6,
+        "rank": 9,
         "team": "Arizona State",
         "conference": {
           "gp": 3,
@@ -389,124 +476,37 @@
         }
       },
       {
-        "rank": 7,
-        "team": "Minnesota Duluth",
-        "conference": {
-          "gp": 3,
-          "pts": 3,
-          "w": 1,
-          "l": 2,
-          "t": 0,
-          "ow": 0,
-          "ol": 0,
-          "sw": 0,
-          "gf": 6,
-          "ga": 8,
-          "combined": "1-2-0 (0-0-0)",
-          "gf_ga": "6-8"
-        },
-        "overall": {
-          "gp": 11,
-          "w": 6,
-          "l": 3,
-          "t": 2,
-          "win_pct": 0.682,
-          "gf": 37,
-          "ga": 21,
-          "combined": "6-3-2",
-          "gf_ga": "37-21"
-        }
-      },
-      {
-        "rank": 8,
+        "rank": 10,
         "team": "Western Michigan",
         "conference": {
-          "gp": 1,
+          "gp": 2,
           "pts": 2,
           "w": 0,
-          "l": 0,
-          "t": 1,
-          "ow": 0,
-          "ol": 0,
-          "sw": 1,
-          "gf": 2,
-          "ga": 2,
-          "combined": "0-0-1 (0-0-1)",
-          "gf_ga": "2-2"
-        },
-        "overall": {
-          "gp": 8,
-          "w": 6,
           "l": 1,
           "t": 1,
-          "win_pct": 0.812,
-          "gf": 42,
-          "ga": 13,
-          "combined": "6-1-1",
-          "gf_ga": "42-13"
-        }
-      },
-      {
-        "rank": 9,
-        "team": "Omaha",
-        "conference": {
-          "gp": 3,
-          "pts": 2,
-          "w": 0,
-          "l": 2,
-          "t": 1,
           "ow": 0,
           "ol": 0,
           "sw": 1,
-          "gf": 4,
-          "ga": 8,
-          "combined": "0-2-1 (0-0-1)",
-          "gf_ga": "4-8"
+          "gf": 3,
+          "ga": 6,
+          "combined": "0-1-1 (0-0-1)",
+          "gf_ga": "3-6"
         },
         "overall": {
-          "gp": 7,
-          "w": 2,
-          "l": 4,
+          "gp": 9,
+          "w": 6,
+          "l": 2,
           "t": 1,
-          "win_pct": 0.429,
-          "gf": 18,
-          "ga": 20,
-          "combined": "2-4-1",
-          "gf_ga": "18-20"
-        }
-      },
-      {
-        "rank": 10,
-        "team": "North Dakota",
-        "conference": {
-          "gp": 1,
-          "pts": 1,
-          "w": 0,
-          "l": 0,
-          "t": 1,
-          "ow": 0,
-          "ol": 0,
-          "sw": 0,
-          "gf": 2,
-          "ga": 2,
-          "combined": "0-0-1 (0-0-0)",
-          "gf_ga": "2-2"
-        },
-        "overall": {
-          "gp": 8,
-          "w": 4,
-          "l": 3,
-          "t": 1,
-          "win_pct": 0.562,
-          "gf": 28,
-          "ga": 22,
-          "combined": "4-3-1",
-          "gf_ga": "28-22"
+          "win_pct": 0.722,
+          "gf": 43,
+          "ga": 17,
+          "combined": "6-2-1",
+          "gf_ga": "43-17"
         }
       }
     ],
     "status": "ok",
-    "updated_at": "2026-11-07T11:52:24+00:00"
+    "updated_at": "2026-11-08T11:52:22+00:00"
   },
-  "generated_at": "2026-11-07T11:52:24+00:00"
+  "generated_at": "2026-11-08T11:52:22+00:00"
 }
