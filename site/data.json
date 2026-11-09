@@ -2,128 +2,128 @@
   "poll": {
     "source": "https://www.uscho.com/rankings/d-i-mens-poll/",
     "name": "USCHO.com Division I Men's Poll",
-    "poll_date": "2026-11-02",
-    "week_of": "Week of Nov. 2",
+    "poll_date": "2026-11-09",
+    "week_of": "Week of Nov. 9",
     "rows": [
       {
         "rank": 1,
         "team": "Wisconsin",
         "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Wisconsin.png",
         "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Wisconsin_2.png",
-        "first_place_votes": 37,
-        "record": "6-0-0",
-        "points": 979,
-        "last_rank": 2
+        "first_place_votes": 44,
+        "record": "7-0-1",
+        "points": 992,
+        "last_rank": 1
       },
       {
         "rank": 2,
         "team": "Michigan",
         "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Michigan.png",
         "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Michigan_2.png",
-        "first_place_votes": 9,
+        "first_place_votes": 6,
         "record": "8-1-0",
-        "points": 922,
-        "last_rank": 1
+        "points": 946,
+        "last_rank": 2
       },
       {
         "rank": 3,
-        "team": "Michigan State",
-        "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Michigan State.png",
-        "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Michigan State_2.png",
-        "first_place_votes": 3,
-        "record": "5-1-0",
-        "points": 897,
-        "last_rank": 4
-      },
-      {
-        "rank": 4,
         "team": "Denver",
         "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Denver.png",
         "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Denver_2.png",
         "first_place_votes": 0,
-        "record": "5-2-1",
-        "points": 830,
+        "record": "7-2-1",
+        "points": 859,
+        "last_rank": 4
+      },
+      {
+        "rank": 4,
+        "team": "Michigan State",
+        "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Michigan State.png",
+        "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Michigan State_2.png",
+        "first_place_votes": 0,
+        "record": "6-2-0",
+        "points": 838,
         "last_rank": 3
       },
       {
         "rank": 5,
-        "team": "Western Michigan",
-        "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Western Michigan.png",
-        "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Western Michigan_2.png",
-        "first_place_votes": 1,
-        "record": "6-1-0",
-        "points": 785,
-        "last_rank": 6
-      },
-      {
-        "rank": 6,
-        "team": "Minnesota Duluth",
-        "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Minnesota Duluth.png",
-        "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Minnesota Duluth_2.png",
-        "first_place_votes": 0,
-        "record": "6-2-2",
-        "points": 681,
-        "last_rank": 7
-      },
-      {
-        "rank": 6,
         "team": "Quinnipiac",
         "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Quinnipiac.png",
         "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Quinnipiac_2.png",
         "first_place_votes": 0,
-        "record": "5-2-0",
-        "points": 681,
-        "last_rank": 10
+        "record": "7-2-0",
+        "points": 751,
+        "last_rank": 6
       },
       {
-        "rank": 8,
-        "team": "Augustana",
-        "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Augustana.png",
-        "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Augustana_2.png",
+        "rank": 6,
+        "team": "Western Michigan",
+        "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Western Michigan.png",
+        "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Western Michigan_2.png",
         "first_place_votes": 0,
-        "record": "7-0-1",
-        "points": 600,
-        "last_rank": 11
-      },
-      {
-        "rank": 9,
-        "team": "Providence",
-        "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Providence.png",
-        "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Providence_2.png",
-        "first_place_votes": 0,
-        "record": "5-1-0",
-        "points": 596,
+        "record": "6-2-1",
+        "points": 706,
         "last_rank": 5
       },
       {
-        "rank": 10,
+        "rank": 7,
+        "team": "Minnesota Duluth",
+        "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Minnesota Duluth.png",
+        "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Minnesota Duluth_2.png",
+        "first_place_votes": 0,
+        "record": "7-3-2",
+        "points": 651,
+        "last_rank": 6
+      },
+      {
+        "rank": 8,
         "team": "North Dakota",
         "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\North Dakota.png",
         "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\North Dakota_2.png",
         "first_place_votes": 0,
-        "record": "4-3-0",
-        "points": 542,
+        "record": "5-3-1",
+        "points": 630,
+        "last_rank": 10
+      },
+      {
+        "rank": 9,
+        "team": "Augustana",
+        "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Augustana.png",
+        "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Augustana_2.png",
+        "first_place_votes": 0,
+        "record": "7-0-3",
+        "points": 583,
         "last_rank": 8
       },
       {
-        "rank": 11,
-        "team": "Colorado College",
-        "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Colorado College.png",
-        "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Colorado College_2.png",
+        "rank": 10,
+        "team": "Providence",
+        "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Providence.png",
+        "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Providence_2.png",
         "first_place_votes": 0,
         "record": "6-2-0",
-        "points": 537,
+        "points": 522,
         "last_rank": 9
       },
       {
-        "rank": 12,
+        "rank": 11,
         "team": "Dartmouth",
         "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Dartmouth.png",
         "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Dartmouth_2.png",
         "first_place_votes": 0,
-        "record": "2-0-0",
-        "points": 477,
+        "record": "4-0-0",
+        "points": 518,
         "last_rank": 12
+      },
+      {
+        "rank": 12,
+        "team": "Colorado College",
+        "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Colorado College.png",
+        "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Colorado College_2.png",
+        "first_place_votes": 0,
+        "record": "7-2-1",
+        "points": 494,
+        "last_rank": 11
       },
       {
         "rank": 13,
@@ -131,9 +131,9 @@
         "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Boston University.png",
         "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Boston University_2.png",
         "first_place_votes": 0,
-        "record": "6-2-0",
-        "points": 405,
-        "last_rank": 14
+        "record": "7-3-0",
+        "points": 485,
+        "last_rank": 13
       },
       {
         "rank": 14,
@@ -141,9 +141,9 @@
         "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Michigan Tech.png",
         "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Michigan Tech_2.png",
         "first_place_votes": 0,
-        "record": "6-2-0",
-        "points": 355,
-        "last_rank": 13
+        "record": "6-2-2",
+        "points": 376,
+        "last_rank": 14
       },
       {
         "rank": 15,
@@ -151,9 +151,9 @@
         "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Merrimack.png",
         "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Merrimack_2.png",
         "first_place_votes": 0,
-        "record": "5-1-2",
-        "points": 310,
-        "last_rank": 16
+        "record": "6-1-2",
+        "points": 341,
+        "last_rank": 15
       },
       {
         "rank": 16,
@@ -161,53 +161,53 @@
         "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Cornell.png",
         "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Cornell_2.png",
         "first_place_votes": 0,
-        "record": "1-1-0",
-        "points": 181,
-        "last_rank": 15
+        "record": "2-2-0",
+        "points": 156,
+        "last_rank": 16
       },
       {
         "rank": 17,
-        "team": "Union",
-        "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Union.png",
-        "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Union_2.png",
+        "team": "Miami",
+        "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Miami.png",
+        "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Miami_2.png",
         "first_place_votes": 0,
-        "record": "5-2-0",
-        "points": 126,
+        "record": "7-3-0",
+        "points": 155,
         "last_rank": null
       },
       {
         "rank": 18,
-        "team": "Minnesota",
-        "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Minnesota.png",
-        "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Minnesota_2.png",
-        "first_place_votes": 0,
-        "record": "3-3-2",
-        "points": 121,
-        "last_rank": 18
-      },
-      {
-        "rank": 19,
         "team": "Army",
         "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Army.png",
         "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Army_2.png",
         "first_place_votes": 0,
-        "record": "5-1-0",
+        "record": "6-2-0",
         "points": 117,
+        "last_rank": 19
+      },
+      {
+        "rank": 19,
+        "team": "Northeastern",
+        "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Northeastern.png",
+        "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Northeastern_2.png",
+        "first_place_votes": 0,
+        "record": "4-2-0",
+        "points": 114,
         "last_rank": null
       },
       {
         "rank": 20,
-        "team": "Connecticut",
-        "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Connecticut.png",
-        "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Connecticut_2.png",
+        "team": "Vermont",
+        "image_path": "D:\\HOCKEY\\Images\\TEAM COLORS\\Vermont.png",
+        "image_path_2": "D:\\HOCKEY\\Images\\TEAM COLORS\\Vermont_2.png",
         "first_place_votes": 0,
-        "record": "3-4-1",
-        "points": 92,
-        "last_rank": 17
+        "record": "5-3-1",
+        "points": 65,
+        "last_rank": null
       }
     ],
     "status": "ok",
-    "updated_at": "2026-11-02T20:12:57+00:00"
+    "updated_at": "2026-11-09T20:20:07+00:00"
   },
   "standings": {
     "source": "https://nchchockey.com/standings.aspx?path=mhockey",
@@ -508,5 +508,5 @@
     "status": "ok",
     "updated_at": "2026-11-09T12:09:59+00:00"
   },
-  "generated_at": "2026-11-09T12:09:59+00:00"
+  "generated_at": "2026-11-09T20:20:07+00:00"
 }
